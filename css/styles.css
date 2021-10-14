@@ -44,7 +44,9 @@ ul {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  display: flex;
 }
+
 .nav-link {
   text-decoration: none;
   color: var(--primery-text-color);
@@ -115,6 +117,7 @@ ul {
 }
 .feature-list {
   list-style: none;
+  display: flex;
 }
 .feature-subtitle {
   color: var(--primery-text-color);
@@ -140,6 +143,7 @@ ul {
 }
 .info-list {
   list-style: none;
+  display: flex;
 }
 
 /* Блок Наша команда */
@@ -156,6 +160,7 @@ ul {
 }
 .team-list {
   list-style: none;
+  display: flex;
 }
 .team-subtitle {
   color: var(--primery-text-color);
@@ -215,6 +220,7 @@ ul {
 }
 .portfolio-buttons {
   list-style: none;
+  display: flex;
 }
 .portfolio-item {
   color: var(--primery-text-color);
