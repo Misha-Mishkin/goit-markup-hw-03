@@ -15,55 +15,101 @@ body {
 h1,
 h2,
 h3,
-p,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 ul {
-  padding-top: 0;
-  padding-bottom: 0;
-  margin-top: 0;
-  margin-bottom: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 /* Блок header */
 
+.header-section {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+}
+
 .logo {
+  margin-right: 93px;
+
   text-decoration: none;
   font-family: Raleway, sans-serif;
   letter-spacing: 0.03em;
   font-size: 26px;
   line-height: 1.19;
 }
+
 .web {
   color: var(--accent-text-color);
 }
+
 .studio {
   color: #000000;
 }
+
 .nav-links {
+  display: flex;
+
   list-style: none;
   letter-spacing: 0.02em;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  display: flex;
+}
+
+.nav-links .nav-item + .nav-item {
+  margin-left: 50px;
 }
 
 .nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   text-decoration: none;
   color: var(--primery-text-color);
 }
+
 .nav-link.current {
   color: var(--accent-text-color);
 }
+
 .nav-contacts {
+  display: flex;
+  margin-left: auto;
+
+  list-style: none;
   letter-spacing: 0.02em;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
 }
+
+.nav-contacts .cont-item + .cont-item {
+  margin-left: 50px;
+}
+
 .nav-contact {
   color: var(--secondary-text-color);
   text-decoration: none;
 }
+
 .nav-link:hover,
 .nav-link:focus,
 .nav-contact:hover,
