@@ -36,6 +36,10 @@ ul {
 
 /* Блок header */
 
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
 .header-section {
   display: flex;
   align-items: center;
@@ -46,7 +50,7 @@ ul {
   align-items: center;
 }
 
-.logo {
+.logo-header {
   margin-right: 93px;
 
   text-decoration: none;
@@ -123,18 +127,25 @@ ul {
 /* Блок со слайдером */
 
 .main-section {
+  text-align: center;
+  margin-bottom: 94px;
+
   background-color: #2f303a;
   letter-spacing: 0.06em;
 }
 .main-title {
+  margin-bottom: 30px;
+
   color: var(--text-white-color);
   text-transform: uppercase;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
 }
+
 .main-button {
+  margin-bottom: 200px;
+
   background-color: var(--accent-text-color);
   color: var(--text-white-color);
   letter-spacing: 0.06em;
@@ -165,8 +176,21 @@ ul {
 .feature-list {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
+
+  margin-bottom: 94px;
 }
+.feature-item {
+  width: calc((100% - 3 * 30px) / 4);
+  margin-right: 30px;
+}
+.feature-item:nth-child(4n) {
+  margin-right: 0;
+}
+
 .feature-subtitle {
+  margin-bottom: 10px;
+
   color: var(--primery-text-color);
   text-transform: uppercase;
   font-weight: 700;
@@ -182,6 +206,8 @@ ul {
 /* Блок с картинками */
 
 .info-title {
+  margin-bottom: 50px;
+
   color: var(--primery-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -191,6 +217,16 @@ ul {
 .info-list {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 94px;
+}
+
+.info-item {
+  width: calc((100% - 2 * 30px) / 3);
+  margin-right: 30px;
+}
+.info-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 /* Блок Наша команда */
@@ -199,6 +235,9 @@ ul {
   background-color: #f5f4fa;
 }
 .team-title {
+  padding-top: 94px;
+  margin-bottom: 50px;
+
   color: var(--primery-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -208,8 +247,27 @@ ul {
 .team-list {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
 }
+.team-item {
+  width: calc((100% - 3 * 30px) / 4);
+  margin-right: 30px;
+  margin-bottom: 94px;
+
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-item:nth-child(4n) {
+  margin-right: 0;
+}
+
 .team-subtitle {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
   color: var(--primery-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -221,6 +279,7 @@ ul {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 /* Подвал сайта */
@@ -228,23 +287,54 @@ ul {
 .footer {
   background-color: #2f303a;
 }
+
+.logo-footer {
+  display: block;
+  margin-bottom: 20px;
+
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 26px;
+  line-height: 1.19;
+}
 .footer-studio {
   color: var(--text-white-color);
 }
 .footer-location {
+  display: block;
+  margin-bottom: 9px;
+
   color: var(--text-white-color);
   font-size: 14px;
   line-height: 1.71;
 }
-.footer-contact {
+.footer-contact-mail {
+  display: block;
+  margin-bottom: 9px;
+
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   font-size: 14px;
   line-height: 1.71;
 }
 
+.footer-contact-phone {
+  display: block;
+
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.contacts {
+  padding-bottom: 60px;
+}
+
 .footer-location,
-.footer-contact {
+.footer-contact-mail,
+.footer-contact-phone {
   font-style: normal;
 }
 .footer-contact:hover,
